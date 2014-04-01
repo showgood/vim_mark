@@ -135,8 +135,8 @@ nnoremap <silent> <Plug>MarkClear :call
 
 nnoremap <silent> <leader>* :call <sid>SearchCurrentMark()<cr>
 nnoremap <silent> <leader># :call <sid>SearchCurrentMark("b")<cr>
-nnoremap <silent> <leader>/ :call <sid>SearchAnyMark()<cr>
-nnoremap <silent> <leader>? :call <sid>SearchAnyMark("b")<cr>
+nnoremap <silent> <leader><leader>/ :call <sid>SearchAnyMark()<cr>
+nnoremap <silent> <leader><leader>? :call <sid>SearchAnyMark("b")<cr>
 nnoremap <silent> * :if !<sid>SearchNext()<bar>execute "norm! *"<bar>endif<cr>
 nnoremap <silent> # :if !<sid>SearchNext("b")<bar>execute "norm! #"<bar>endif<cr>
 
